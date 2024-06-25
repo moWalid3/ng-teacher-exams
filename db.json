@@ -1,0 +1,53 @@
+{
+  "students": [
+    {
+      "id": "06d9",
+      "name": "aaa",
+      "email": "a@ai.com",
+      "password": "aaaaaaaa",
+      "rePassword": "aaaaaaaa"
+    },
+    {
+      "id": "9d4e",
+      "name": "aaa",
+      "email": "a@ai.com",
+      "password": "aaaaaaaa",
+      "rePassword": "aaaaaaaa"
+    },
+    {
+      "id": "5548",
+      "name": "aaaa",
+      "email": "asdfsdfwef@sdfklj.co",
+      "password": "ssssss",
+      "rePassword": "ssssss"
+    },
+    {
+      "id": "1ae6",
+      "name": "eee",
+      "email": "ee@ai.ai",
+      "password": "aaaaaa",
+      "rePassword": "aaaaaa"
+    },
+    {
+      "id": "bc0e",
+      "name": "aaa",
+      "email": "yj@ja.com",
+      "password": "111111",
+      "rePassword": "111111"
+    },
+    {
+      "id": "299a",
+      "name": "hosam",
+      "email": "hosam@ai.ai",
+      "password": "aaaaaaaaaa",
+      "rePassword": "aaaaaaaaaa"
+    }
+  ],
+  "teacher": {
+    "id": "1",
+    "name": "Mohamed",
+    "email": "Admin@Admin.com",
+    "password": "admin123",
+    "rePassword": "admin123"
+  }
+}

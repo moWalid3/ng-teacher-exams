@@ -1,1 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+$main-color: #CB997E;
+$main-light: #DDBEA9;
+$main-lighter: #FFE8D6;
+
+$alt-color: #6B705C;
+$alt-light: #A5A58D;
+$alt-lighter: #B7B7A4;
+$alt-hover: #7a7e6c;
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.bg-main {
+  background-color: $main-color !important;
+}
+.bg-main-light {
+  background-color: $main-light !important;
+}
+.bg-main-lighter {
+  background-color: $main-lighter !important;
+}
+
+.bg-alt {
+  background-color: $alt-color !important;
+}
+.bg-alt-light {
+  background-color: $alt-light !important;
+}
+.bg-alt-lighter {
+  background-color: $alt-lighter !important;
+}
+
+form {
+  position: relative;
+  h3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content !important;
+  }
+}
+
+.btn-alt {
+  background-color: $alt-color !important;
+  color: white !important;
+  width: fit-content;
+  transition: .2s;
+  &:hover {
+    background-color: $alt-hover !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  &:focus {
+    border-color: $alt-color !important;
+  }
+  &.is-valid {
+    border-color: #198754 !important;
+  }
+  &.is-invalid {
+    border-color: #dc3545 !important;
+  }
+}
