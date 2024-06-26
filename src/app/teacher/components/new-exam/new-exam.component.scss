@@ -1,0 +1,17 @@
+section {
+  .main-links{
+    .line {
+      height: 2px;
+    }
+    span.link-number {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+    a {
+      pointer-events: none;
+      &.enable-event {
+        pointer-events: initial;
+      }
+    }
+  }
+}

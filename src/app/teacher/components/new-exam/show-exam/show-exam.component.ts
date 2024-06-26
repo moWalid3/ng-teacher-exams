@@ -1,36 +1,32 @@
 import { Component } from '@angular/core';
-import { Choices, Subject } from '../../../shared/interfaces/subject';
-import { TeacherService } from '../../../teacher/services/teacher.service';
+import { TeacherService } from '../../../services/teacher.service';
 import { ToastrService } from 'ngx-toastr';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
+import { Subject } from '../../../../shared/interfaces/subject';
 
 @Component({
-  selector: 'app-exam',
-  templateUrl: './exam.component.html',
-  styleUrl: './exam.component.scss'
+  selector: 'app-show-exam',
+  templateUrl: './show-exam.component.html',
+  styleUrl: './show-exam.component.scss'
 })
-export class ExamComponent {
+export class ShowExamComponent {
   id: string = '';
   subject: Subject = {} as Subject;
-  choices: Choices[] = ['A', 'B', 'C', 'D'];
-  studentAnswers: Choices[] = [];
-  isAdmin: boolean = false; 
   constructor(
     private _TeacherService: TeacherService,
     private toastr: ToastrService,
     private _ActivatedRoute: ActivatedRoute,
-    private _Router: Router
   ) {}
 
   ngOnInit(): void {
     this.getId();
     this.getSubject();
-
-    if(localStorage.getItem('id') === '1') this.isAdmin = true;
   }
   
   getId() {  
-    this.id = this._ActivatedRoute.snapshot.paramMap.get('id')!;
+    this._ActivatedRoute.paramMap.forEach(
+      (param) => (this.id = param.get('id')!)
+    );
   }
   
   getSubject() {
@@ -46,14 +42,5 @@ export class ExamComponent {
   onCancel() {
     this.toastr.success("تم حذف الاختبار بنجاح");
     this._TeacherService.removeSubject(this.id).subscribe();
-  }
-  
-  studentSubmit() {
-    if(this.studentAnswers.length < this.subject.questions.length) {
-      this.toastr.error("اجب عن جميع الاسئله");
-    } else {
-      this.toastr.success("تم انهاء الاختبار بنجاح");
-      
-    }
   }
 }

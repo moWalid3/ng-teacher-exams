@@ -1,46 +1,18 @@
 {
   "students": [
     {
-      "id": "06d9",
-      "name": "aaa",
+      "id": "5d93",
+      "name": "ali",
       "email": "a@ai.com",
-      "password": "aaaaaaaa",
-      "rePassword": "aaaaaaaa"
-    },
-    {
-      "id": "9d4e",
-      "name": "aaa",
-      "email": "a@ai.com",
-      "password": "aaaaaaaa",
-      "rePassword": "aaaaaaaa"
-    },
-    {
-      "id": "5548",
-      "name": "aaaa",
-      "email": "asdfsdfwef@sdfklj.co",
-      "password": "ssssss",
-      "rePassword": "ssssss"
-    },
-    {
-      "id": "1ae6",
-      "name": "eee",
-      "email": "ee@ai.ai",
       "password": "aaaaaa",
       "rePassword": "aaaaaa"
     },
     {
-      "id": "bc0e",
-      "name": "aaa",
-      "email": "yj@ja.com",
-      "password": "111111",
-      "rePassword": "111111"
-    },
-    {
-      "id": "299a",
-      "name": "hosam",
-      "email": "hosam@ai.ai",
-      "password": "aaaaaaaaaa",
-      "rePassword": "aaaaaaaaaa"
+      "id": "9945",
+      "name": "ali",
+      "email": "ali@ali.com",
+      "password": "aaaaaa",
+      "rePassword": "aaaaaa"
     }
   ],
   "teacher": {
@@ -49,5 +21,81 @@
     "email": "Admin@Admin.com",
     "password": "admin123",
     "rePassword": "admin123"
-  }
+  },
+  "subjects": [
+    {
+      "id": "57cf",
+      "date": "2024-06-26T09:25:02.902Z",
+      "name": "العلوم",
+      "questions": [
+        {
+          "question": "كم عدد الكواكب",
+          "answers": {
+            "A": "11",
+            "B": "12",
+            "C": "22",
+            "D": "33"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "الارض تدور حول الشمس كل",
+          "answers": {
+            "A": "ثلثمائة يوم",
+            "B": "ثلثمائة وستون يوم",
+            "C": "ثلثمائة و خمسة وستون يوم",
+            "D": "لا يوجد اجابة صحيحة"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "اكبر الكواكب ؟",
+          "answers": {
+            "A": "لالارض",
+            "B": "المشترى",
+            "C": "الزهره",
+            "D": "عطارد"
+          },
+          "correctAnswer": "B"
+        }
+      ]
+    },
+    {
+      "id": "6938",
+      "date": "2024-06-26T10:58:19.632Z",
+      "name": "Math",
+      "questions": [
+        {
+          "question": "2*2",
+          "answers": {
+            "A": "3",
+            "B": "4",
+            "C": "66",
+            "D": "5"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "111*2",
+          "answers": {
+            "A": "111",
+            "B": "53",
+            "C": "33",
+            "D": "222"
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "question": "6/3",
+          "answers": {
+            "A": "2",
+            "B": "6",
+            "C": "3",
+            "D": "4"
+          },
+          "correctAnswer": "A"
+        }
+      ]
+    }
+  ]
 }

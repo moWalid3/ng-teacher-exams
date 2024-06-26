@@ -9,10 +9,6 @@ import { User } from '../../shared/interfaces/user';
 export class AuthService {
 
   constructor(private _HttpClient: HttpClient) {
-    
-    if(localStorage.getItem('id') == null) {
-      
-    }
 
   }
 
@@ -28,5 +24,8 @@ export class AuthService {
     return this._HttpClient.get('teacher');
   }
 
+  updateStudents(id: string, user: User): Observable<any> {
+    return this._HttpClient.put('students', user);
+  }
 
 }

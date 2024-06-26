@@ -14,9 +14,8 @@ export class RegisterComponent implements OnInit{
   constructor(private _AuthService: AuthService, private toastr: ToastrService, private _Router: Router) {}
 
   ngOnInit(): void {
-    this._AuthService.getAllUsers().subscribe(res => console.log(res))
     if(localStorage.getItem('id') !== null) {
-      this._Router.navigate(['/student']);
+      this._Router.navigate(['/subjects']);
     }
   }
 

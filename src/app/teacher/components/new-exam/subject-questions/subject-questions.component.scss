@@ -1,0 +1,9 @@
+
+.answer {
+  input[type='text'] {
+    border-color: #d3d3d3 !important;
+    &:focus {
+      border-color:  #6B705C !important;
+    }
+  }
+}

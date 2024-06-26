@@ -15,11 +15,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     if(localStorage.getItem('id') !== null) {
-      if(localStorage.getItem('id') === '1') {
-        this._Router.navigate(['/students']);
-      } else {
-        this._Router.navigate(['/subjects']);
-      }
+      this._Router.navigate(['/subjects']);
     }
   }
 
@@ -33,7 +29,7 @@ export class LoginComponent implements OnInit {
       if(res.email === loginForm.get('email')?.value && res.password == loginForm.get('password')?.value) {
         this.toastr.success("تم تسجيل الدخول بنجاح");
         localStorage.setItem('id', res.id);
-        this._Router.navigate(['/students'])
+        this._Router.navigate(['/subjects'])
       } else {
         this.handleLoginStudent(loginForm);
       }

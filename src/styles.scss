@@ -4,11 +4,14 @@
 $main-color: #CB997E;
 $main-light: #DDBEA9;
 $main-lighter: #FFE8D6;
+$main-hover: #d0a38b;
 
 $alt-color: #6B705C;
 $alt-light: #A5A58D;
 $alt-lighter: #B7B7A4;
 $alt-hover: #7a7e6c;
+
+
 
 body {
   font-family: "Cairo", sans-serif;
@@ -34,7 +37,14 @@ body {
   background-color: $alt-lighter !important;
 }
 
-form {
+.text-main {
+  color: $main-color !important;
+}
+.text-alt {
+  color: $alt-color !important;
+}
+
+form, .my-table {
   position: relative;
   h3 {
     position: absolute;
@@ -54,14 +64,32 @@ form {
     background-color: $alt-hover !important;
   }
 }
+.btn-main {
+  background-color: $main-color !important;
+  color: white !important;
+  width: fit-content;
+  transition: .2s;
+  &:hover {
+    background-color: $main-hover !important;
+  }
+}
 
 a {
   text-decoration: none;
 }
 
 input {
+  border-color: #d3d3d3 !important;
+  caret-color: $alt-light !important;
+  &::placeholder {
+    color: #bbbbbb !important;
+    transition: .2s;
+  }
   &:focus {
     border-color: $alt-color !important;
+    &::placeholder {
+      opacity: 0;
+    }
   }
   &.is-valid {
     border-color: #198754 !important;
@@ -70,3 +98,16 @@ input {
     border-color: #dc3545 !important;
   }
 }
+
+.bg-black-light {
+  background-color: #e1e2de !important;
+}
+
+.btn {
+  transition: .2s;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+

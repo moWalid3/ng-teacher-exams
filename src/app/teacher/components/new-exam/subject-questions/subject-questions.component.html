@@ -1,0 +1,29 @@
+
+<section class="pt-5 w-75 mx-auto">
+
+  <form >
+    <div class="question mb-5">
+      <label for="question" class="mb-1">السؤال</label>
+      <input class="form-control shadow-none" type="text" id="question" [(ngModel)]="question" name="question">
+    </div>
+    
+    <div class="answers row mb-3">
+      <div class="answer col-md-6 d-flex align-items-center mb-3" *ngFor="let answer of ['A', 'B', 'C', 'D']; let i = index">
+        <input type="radio" class="form-check-input border-secondary cursor-pointer ms-2 fs-5"  name="correctAnswer" [value]="answer" [(ngModel)]="correctAnswer">
+        <input type="text" class="form-control shadow-none border-0 border-bottom" [(ngModel)]="answers[i]" [placeholder]="'اجابة '+answer" [name]="'answerText' + i">
+      </div>
+    </div>
+    
+    <div class="d-flex justify-content-between">
+      <div>
+        <button [disabled]="allQuestions.length === 0" type="submit" class="btn mb-2 btn-success" (click)="onSubmit()">انتهاء</button>
+        <button type="button" class="btn mb-2 btn-danger mx-1 me-sm-2" (click)="onCancel()">الغاء</button>
+      </div>
+      <div class="text-start">
+        <button type="button" class="btn mb-2 btn-success ms-1 ms-sm-2" (click)="onSave()">حفظ</button>
+        <button type="button" class="btn mb-2 btn-danger" (click)="onDelete()">حذف</button>
+      </div>
+    </div>
+  </form>
+
+</section>

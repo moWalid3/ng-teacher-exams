@@ -4,6 +4,9 @@ import { SharedModule } from '../shared/shared.module';
 import { NewExamComponent } from './components/new-exam/new-exam.component';
 import { StudentsComponent } from './components/students/students.component';
 import { SubjectsComponent } from './components/subjects/subjects.component';
+import { SubjectNameComponent } from './components/new-exam/subject-name/subject-name.component';
+import { SubjectQuestionsComponent } from './components/new-exam/subject-questions/subject-questions.component';
+import { ShowExamComponent } from './components/new-exam/show-exam/show-exam.component';
 
 
 
@@ -11,7 +14,10 @@ import { SubjectsComponent } from './components/subjects/subjects.component';
   declarations: [
     NewExamComponent,
     StudentsComponent,
-    SubjectsComponent
+    SubjectsComponent,
+    SubjectNameComponent,
+    SubjectQuestionsComponent,
+    ShowExamComponent
   ],
   imports: [
     CommonModule,
