@@ -411,6 +411,48 @@
           ]
         }
       ]
+    },
+    {
+      "id": "5ce5",
+      "name": "Taha",
+      "email": "taha@gmail.com",
+      "password": "taha123",
+      "rePassword": "taha123",
+      "subjects": [
+        {
+          "id": "57cf",
+          "degree": "2 / 2",
+          "name": "العلوم",
+          "studentAnswers": [
+            "C",
+            "B"
+          ]
+        },
+        {
+          "id": "c736",
+          "degree": "5 / 5",
+          "name": "English",
+          "studentAnswers": [
+            "B",
+            "B",
+            "A",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "id": "d878",
+          "degree": "5 / 3",
+          "name": "الكيمياء",
+          "studentAnswers": [
+            "C",
+            "D",
+            "D",
+            "C",
+            "C"
+          ]
+        }
+      ]
     }
   ],
   "teacher": {
