@@ -10,8 +10,14 @@
         <ul class="list-unstyled p-0 mb-1">
           <div class="answers row">
             <div class="answer col-md-6 d-flex align-items-center mb-3" *ngFor="let answer of choices; let j = index">
-              <input *ngIf="!isAdmin" [(ngModel)]="studentAnswers[i]" [value]="answer" type="radio" class="form-check-input mt-0 border-secondary cursor-pointer ms-2 fs-6"  [name]="'answersForQ'+i" [id]="'ques'+i+'ans'+j">
-              <label [for]="'ques'+i+'ans'+j" class="form-check-label cursor-pointer text-muted"><span *ngIf="isAdmin" class="text-black">({{answer}})</span> {{question.answers[answer]}}</label>
+              <input *ngIf="!isAdmin && !finish" [(ngModel)]="studentAnswers[i]" [value]="answer" type="radio" class="form-check-input mt-0 border-secondary cursor-pointer ms-2 fs-6"  [name]="'answersForQ'+i" [id]="'ques'+i+'ans'+j">
+              <label [for]="'ques'+i+'ans'+j" class="form-check-label flex-grow-1"
+                [ngClass]="{
+                  'bg-success text-white': finish && ( answer == question.correctAnswer),
+                  'bg-danger text-white': finish && (studentAnswers[i] == answer)  && (studentAnswers[i] != question.correctAnswer),
+                  'cursor-pointer': !finish && !isAdmin
+                }"
+              ><span *ngIf="isAdmin || finish">({{answer}})</span> {{question.answers[answer]}}</label>
             </div>
           </div>
         </ul>
@@ -25,7 +31,13 @@
       <div class="d-flex justify-content-center gap-2">
         <button *ngIf="isAdmin" routerLink="/subjects" (click)="onCancel()" class="btn btn-danger mt-4 mb-2">الغاء الاختبار</button>
         <button *ngIf="isAdmin" routerLink="/subjects" class="btn btn-success mt-4 mb-2" >تأكيد</button>
-        <button *ngIf="!isAdmin" class="btn btn-main mt-1 mb-2" (click)="studentSubmit()">انهاء الاختبار</button>
+        @if (!isAdmin && !finish) {
+          <button class="btn btn-main mt-1 mb-2" (click)="studentSubmit()">انهاء الاختبار</button>
+        } @else { 
+          <div *ngIf="!isAdmin" class="alert text-muted bg-main-lighter fs-5">
+            النتيججه النهائية : <span class="text-black me-2 fs-4 fw-medium">{{degree}}</span>
+          </div>
+        }
       </div>
     </div>
   </div>

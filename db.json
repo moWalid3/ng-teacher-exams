@@ -1,18 +1,416 @@
 {
   "students": [
     {
-      "id": "5d93",
+      "id": "cf50",
       "name": "ali",
-      "email": "a@ai.com",
+      "email": "ali.ali@a.com",
       "password": "aaaaaa",
-      "rePassword": "aaaaaa"
+      "rePassword": "aaaaaa",
+      "subjects": [
+        {
+          "id": "6938",
+          "degree": "3 / 2",
+          "name": "Math",
+          "studentAnswers": [
+            "B",
+            "B",
+            "A"
+          ]
+        },
+        {
+          "id": "57cf",
+          "degree": "2 / 1",
+          "name": "العلوم",
+          "studentAnswers": [
+            "C",
+            "A"
+          ]
+        },
+        {
+          "id": "c736",
+          "degree": "5 / 5",
+          "name": "English",
+          "studentAnswers": [
+            "B",
+            "B",
+            "A",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "id": "73d0",
+          "degree": "5 / 2",
+          "name": "تاريخ",
+          "studentAnswers": [
+            "A",
+            "D",
+            "D",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "id": "d878",
+          "degree": "5 / 2",
+          "name": "الكيمياء",
+          "studentAnswers": [
+            "D",
+            "A",
+            "D",
+            "C",
+            "C"
+          ]
+        }
+      ]
     },
     {
-      "id": "9945",
-      "name": "ali",
-      "email": "ali@ali.com",
+      "id": "3881",
+      "name": "osos",
+      "email": "o@os.os",
       "password": "aaaaaa",
-      "rePassword": "aaaaaa"
+      "rePassword": "aaaaaa",
+      "subjects": [
+        {
+          "id": "57cf",
+          "degree": "2 / 2",
+          "name": "العلوم",
+          "studentAnswers": [
+            "C",
+            "B"
+          ]
+        },
+        {
+          "id": "6938",
+          "degree": "3 / 3",
+          "name": "Math",
+          "studentAnswers": [
+            "B",
+            "D",
+            "A"
+          ]
+        },
+        {
+          "id": "c736",
+          "degree": "5 / 3",
+          "name": "English",
+          "studentAnswers": [
+            "B",
+            "B",
+            "C",
+            "C",
+            "A"
+          ]
+        },
+        {
+          "id": "73d0",
+          "degree": "5 / 1",
+          "name": "تاريخ",
+          "studentAnswers": [
+            "A",
+            "A",
+            "C",
+            "D",
+            "C"
+          ]
+        },
+        {
+          "id": "d878",
+          "degree": "5 / 3",
+          "name": "الكيمياء",
+          "studentAnswers": [
+            "D",
+            "D",
+            "C",
+            "C",
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e7b0",
+      "name": "mohamed",
+      "email": "mo@mo.ai",
+      "password": "111111",
+      "rePassword": "111111",
+      "subjects": [
+        {
+          "id": "6938",
+          "degree": "3 / 3",
+          "name": "Math",
+          "studentAnswers": [
+            "B",
+            "D",
+            "A"
+          ]
+        },
+        {
+          "id": "c736",
+          "degree": "5 / 4",
+          "name": "English",
+          "studentAnswers": [
+            "B",
+            "B",
+            "A",
+            "C",
+            "B"
+          ]
+        },
+        {
+          "id": "57cf",
+          "degree": "2 / 2",
+          "name": "العلوم",
+          "studentAnswers": [
+            "C",
+            "B"
+          ]
+        },
+        {
+          "id": "73d0",
+          "degree": "5 / 3",
+          "name": "تاريخ",
+          "studentAnswers": [
+            "D",
+            "D",
+            "D",
+            "B",
+            "C"
+          ]
+        },
+        {
+          "id": "d878",
+          "degree": "5 / 5",
+          "name": "الكيمياء",
+          "studentAnswers": [
+            "B",
+            "D",
+            "C",
+            "C",
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cdba",
+      "name": "Omar",
+      "email": "omar@gmail.com",
+      "password": "omar123",
+      "rePassword": "omar123",
+      "subjects": [
+        {
+          "id": "57cf",
+          "degree": "2 / 2",
+          "name": "العلوم",
+          "studentAnswers": [
+            "C",
+            "B"
+          ]
+        },
+        {
+          "id": "6938",
+          "degree": "3 / 2",
+          "name": "Math",
+          "studentAnswers": [
+            "B",
+            "A",
+            "A"
+          ]
+        },
+        {
+          "id": "c736",
+          "degree": "5 / 3",
+          "name": "English",
+          "studentAnswers": [
+            "C",
+            "D",
+            "A",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "id": "73d0",
+          "degree": "5 / 5",
+          "name": "تاريخ",
+          "studentAnswers": [
+            "D",
+            "B",
+            "D",
+            "A",
+            "C"
+          ]
+        },
+        {
+          "id": "d878",
+          "degree": "5 / 3",
+          "name": "الكيمياء",
+          "studentAnswers": [
+            "B",
+            "C",
+            "C",
+            null,
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "192c",
+      "name": "Eslam",
+      "email": "eslam@gmail.com",
+      "password": "eslam123",
+      "rePassword": "eslam123",
+      "subjects": [
+        {
+          "id": "57cf",
+          "degree": "2 / 1",
+          "name": "العلوم",
+          "studentAnswers": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "id": "6938",
+          "degree": "3 / 3",
+          "name": "Math",
+          "studentAnswers": [
+            "B",
+            "D",
+            "A"
+          ]
+        },
+        {
+          "id": "c736",
+          "degree": "5 / 5",
+          "name": "English",
+          "studentAnswers": [
+            "B",
+            "B",
+            "A",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "id": "73d0",
+          "degree": "5 / 4",
+          "name": "تاريخ",
+          "studentAnswers": [
+            "D",
+            "B",
+            "D",
+            "D",
+            "C"
+          ]
+        },
+        {
+          "id": "d878",
+          "degree": "5 / 0",
+          "name": "الكيمياء",
+          "studentAnswers": [
+            "C",
+            "A",
+            "D",
+            "D",
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "0f23",
+      "name": "Ahmed",
+      "email": "ahmed@gmail.com",
+      "password": "ahmed123",
+      "rePassword": "ahmed123",
+      "subjects": [
+        {
+          "id": "57cf",
+          "degree": "2 / 2",
+          "name": "العلوم",
+          "studentAnswers": [
+            "C",
+            "B"
+          ]
+        },
+        {
+          "id": "c736",
+          "degree": "5 / 5",
+          "name": "English",
+          "studentAnswers": [
+            "B",
+            "B",
+            "A",
+            "C",
+            "D"
+          ]
+        },
+        {
+          "id": "6938",
+          "degree": "3 / 3",
+          "name": "Math",
+          "studentAnswers": [
+            "B",
+            "D",
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ca5f",
+      "name": "Eman",
+      "email": "eman@gmail.com",
+      "password": "eman123",
+      "rePassword": "eman123",
+      "subjects": [
+        {
+          "id": "57cf",
+          "degree": "2 / 2",
+          "name": "العلوم",
+          "studentAnswers": [
+            "C",
+            "B"
+          ]
+        },
+        {
+          "id": "6938",
+          "degree": "3 / 2",
+          "name": "Math",
+          "studentAnswers": [
+            "B",
+            "D",
+            "B"
+          ]
+        },
+        {
+          "id": "73d0",
+          "degree": "5 / 5",
+          "name": "تاريخ",
+          "studentAnswers": [
+            "D",
+            "B",
+            "D",
+            "A",
+            "C"
+          ]
+        },
+        {
+          "id": "d878",
+          "degree": "5 / 0",
+          "name": "الكيمياء",
+          "studentAnswers": [
+            "D",
+            "B",
+            "B",
+            "B",
+            "B"
+          ]
+        }
+      ]
     }
   ],
   "teacher": {
@@ -28,16 +426,6 @@
       "date": "2024-06-26T09:25:02.902Z",
       "name": "العلوم",
       "questions": [
-        {
-          "question": "كم عدد الكواكب",
-          "answers": {
-            "A": "11",
-            "B": "12",
-            "C": "22",
-            "D": "33"
-          },
-          "correctAnswer": "A"
-        },
         {
           "question": "الارض تدور حول الشمس كل",
           "answers": {
@@ -94,6 +482,177 @@
             "D": "4"
           },
           "correctAnswer": "A"
+        }
+      ]
+    },
+    {
+      "id": "c736",
+      "date": "2024-06-27T08:34:23.126Z",
+      "name": "English",
+      "questions": [
+        {
+          "question": "What color is the sky on a clear day?",
+          "answers": {
+            "A": "Green",
+            "B": "Blue",
+            "C": "Red",
+            "D": "Yellow"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "Which animal is known as the king of the jungle?",
+          "answers": {
+            "A": "Tiger",
+            "B": "Lion",
+            "C": "Giraffe",
+            "D": "Elephant"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "What is the main ingredient in a salad?",
+          "answers": {
+            "A": "Lettuce",
+            "B": "Milk",
+            "C": "Rice",
+            "D": "Bread"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "Which season is usually the coldest?",
+          "answers": {
+            "A": "Spring",
+            "B": "Summer",
+            "C": "Winter",
+            "D": "Fall"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "Which shape has three sides?",
+          "answers": {
+            "A": "Rectangle",
+            "B": "Square",
+            "C": "Circle",
+            "D": "Triangle"
+          },
+          "correctAnswer": "D"
+        }
+      ]
+    },
+    {
+      "id": "73d0",
+      "date": "2024-06-27T08:56:36.442Z",
+      "name": "تاريخ",
+      "questions": [
+        {
+          "question": "شهد العالم الإسلامي أواخر القرن الخامس عشر صراعًا حادًا بين ثلاث قوى هي .........",
+          "answers": {
+            "A": "الدولة المملوكة",
+            "B": "الدولة الصفونية",
+            "C": "الدولة العثمانية",
+            "D": "جميع ما سبق"
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "question": "قامت الدولة ........ في مصر وضمت كلًا من الشام والحجاز",
+          "answers": {
+            "A": "الدولة الصفونية",
+            "B": "الدولة المملوكة",
+            "C": "الدولة العثمانية",
+            "D": "الدولة العباسية"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "تعرضت الدولة المملوكية لتدهور اقتصادي نتيجة .........",
+          "answers": {
+            "A": "اضطراب الأمن",
+            "B": "كثرة الفتن",
+            "C": "الصراع بين المماليك",
+            "D": "اكتشاف طريق رأس الرجاء الصالح"
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "question": "تحطم الأسطول المملوكي في معركة ...........",
+          "answers": {
+            "A": "ديو البحرية",
+            "B": "مرج دابق",
+            "C": "الريدانية ",
+            "D": "أبي قير البحرية"
+          },
+          "correctAnswer": "A"
+        },
+        {
+          "question": "كان عاصمة الدولة الصفوية ........",
+          "answers": {
+            "A": "دمشق ",
+            "B": "بغداد ",
+            "C": "تبريز ",
+            "D": "القاهرة "
+          },
+          "correctAnswer": "C"
+        }
+      ]
+    },
+    {
+      "id": "d878",
+      "date": "2024-06-27T09:06:02.936Z",
+      "name": "الكيمياء",
+      "questions": [
+        {
+          "question": "من العناصرالفلزيه الثلاثيه……………..",
+          "answers": {
+            "A": "الحديد",
+            "B": "الالمنيوم",
+            "C": "النيتروجين",
+            "D": "الالمنيوم و النيتروجين"
+          },
+          "correctAnswer": "B"
+        },
+        {
+          "question": "المركب قد يكون ……………..",
+          "answers": {
+            "A": "حمض",
+            "B": "ملح",
+            "C": "قاعده",
+            "D": "كل ما سبق"
+          },
+          "correctAnswer": "D"
+        },
+        {
+          "question": "من العناصر الانتقاليه الاحاديه……………",
+          "answers": {
+            "A": "الصوديوم",
+            "B": "البوتاسيوم",
+            "C": "الفضه",
+            "D": " كل ماسبق"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "المجموعه الوحيده الموجبه …………….",
+          "answers": {
+            "A": "اللومينات",
+            "B": "الهيدروكسيد",
+            "C": "الامونيوم",
+            "D": "البرمنجانات"
+          },
+          "correctAnswer": "C"
+        },
+        {
+          "question": "العناص النتقاليه يتتابع فيها ملء المستوي الفرعي ………..",
+          "answers": {
+            "A": "S",
+            "B": "P",
+            "C": "d",
+            "D": "f"
+          },
+          "correctAnswer": "C"
         }
       ]
     }

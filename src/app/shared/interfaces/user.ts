@@ -6,7 +6,7 @@ export interface User {
   email: string,
   password: string,
   rePassword: string,
-  subjects?: StudentSubject[];
+  subjects: StudentSubject[];
 }
 
 export interface StudentSubject  {

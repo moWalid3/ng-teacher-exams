@@ -111,3 +111,18 @@ input {
   cursor: pointer;
 }
 
+select {
+  border-color: #d3d3d3 !important;
+  &:focus {
+    border-color: rgba($main-color, 0.25) !important;
+    box-shadow: 0 0 0 0.25rem rgba($main-color, 0.25) !important;
+  }
+}
+
+.toast-bottom-center {
+  bottom: 3rem;
+  margin: 0 auto;
+  right: 0;
+  left: 0;
+  width: 100%;
+}

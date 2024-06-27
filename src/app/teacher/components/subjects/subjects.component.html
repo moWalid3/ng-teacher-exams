@@ -1,11 +1,11 @@
 <section class="" dir="rtl">
   <div class="row row-gap-5">
-    <div *ngFor="let subject of allSubjects" class="col-3">
+    <div *ngFor="let subject of allSubjects" class="col-6 col-md-4 col-lg-3">
       <a [routerLink]="['/exam', subject.id!]"><h4 class="bg-main shadow-sm subject-name text-white py-4 rounded-4 text-center fs-1">{{subject.name}}</h4></a>
       <div class="d-flex justify-content-center gap-2">
         <button (click)="onDelete(subject.id!)" *ngIf="isAdmin" class="btn btn-danger">حذف</button>
         <button [routerLink]="['/exam', subject.id!]" *ngIf="isAdmin" class="btn btn-success">عرض</button>
-        <button [routerLink]="['/exam', subject.id!]" *ngIf="!isAdmin" class="btn btn-success">ابدأ الاختبار</button>
+        <button [routerLink]="['/exam', subject.id!]" *ngIf="!isAdmin" class="btn btn-alt">ابدأ الاختبار</button>
       </div>
     </div>
   </div>

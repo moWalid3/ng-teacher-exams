@@ -55,9 +55,13 @@ export class RegisterComponent implements OnInit{
         this.toastr.error("!هذا الحساب موجود بالفعل", "ادخل ايميل اخر");
       } else {
         this.toastr.success("تم انشاء حساب جديد بنجاح");
-        this._AuthService.createUser(registerForm.value).subscribe(res => {
+        let user : User = {
+          ...registerForm.value,
+          subjects: []
+        }
+        this._AuthService.createUser(user).subscribe(res => {
           this._Router.navigate(['/subjects']);
-          localStorage.setItem("id", res.id)
+          localStorage.setItem("id", res.id);
         });
       }
     });

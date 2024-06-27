@@ -20,12 +20,16 @@ export class AuthService {
     return this._HttpClient.get('students');
   }
 
+  getUser(id: string): Observable<any> {
+    return this._HttpClient.get(`students/${id}`);
+  }
+
   getTeacher(): Observable<any> {
     return this._HttpClient.get('teacher');
   }
 
   updateStudents(id: string, user: User): Observable<any> {
-    return this._HttpClient.put('students', user);
+    return this._HttpClient.put(`students/${id}`, user);
   }
 
 }

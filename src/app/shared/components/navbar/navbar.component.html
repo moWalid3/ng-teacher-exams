@@ -1,30 +1,30 @@
-<nav class="navbar navbar-expand-lg bg-alt" dir="rtl">
+<nav class="navbar navbar-expand-lg bg-alt" dir="rtl" data-bs-theme="dark">
   <div class="container">
     <a class="navbar-brand text-white me-0 fs-4"  routerLink="subjects">
       <img width="35" src="logo.svg" alt=""> فاينال
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler text-white border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto pt-3 pt-lg-0 mb-2 mb-lg-0">
         <li class="nav-item">
-          <a *ngIf="isLogin() && isAdmin()" class="nav-link fs-5 ms-2 text-white" routerLinkActive="bg-alt-light rounded-2" routerLink="students" >الطلاب</a>
+          <a *ngIf="isLogin() && isAdmin()" class="nav-link text-center  fs-5 mx-2 ms-2 text-white" routerLinkActive="bg-alt-light rounded-2" routerLink="students" >الطلاب</a>
         </li>
         <li class="nav-item">
-          <a *ngIf="isLogin() && isAdmin()" class="nav-link fs-5 mx-2 text-white" routerLinkActive="bg-alt-light rounded-2" routerLink="new-exam">اختبار جديد</a>
+          <a *ngIf="isLogin() && isAdmin()" class="nav-link text-center  fs-5 mx-2 text-white" routerLinkActive="bg-alt-light rounded-2" routerLink="new-exam">اختبار جديد</a>
         </li>
         <li class="nav-item">
-          <a *ngIf="isLogin()" class="nav-link fs-5 mx-2 text-white" routerLinkActive="bg-alt-light rounded-2" routerLink="subjects">المواد</a>
+          <a *ngIf="isLogin()" class="nav-link text-center  fs-5 mx-2 text-white" routerLinkActive="bg-alt-light rounded-2" routerLink="subjects">المواد</a>
         </li>
         <li class="nav-item">
-          <a *ngIf="isLogin()" (click)="handleLogout()" class="nav-link fs-5 me-2 text-white" routerLink="login">خروج</a>
+          <a *ngIf="isLogin()" (click)="handleLogout()" class="nav-link text-center  fs-5 me-2 text-white" routerLink="login">خروج</a>
         </li>
         <li class="nav-item">
-          <a *ngIf="!isLogin()" class="nav-link fs-5 mx-2 text-white" routerLinkActive="bg-alt-light rounded-2" routerLink="register">تسجيل</a>
+          <a *ngIf="!isLogin()" class="nav-link text-center  fs-5 mx-2 text-white" routerLinkActive="bg-alt-light rounded-2" routerLink="register">انشاء حساب</a>
         </li>
         <li class="nav-item">
-          <a *ngIf="!isLogin()" class="nav-link fs-5 me-2 text-white"  routerLinkActive="bg-alt-light rounded-2" routerLink="login">دخول</a>
+          <a *ngIf="!isLogin()" class="nav-link text-center  fs-5 me-2 text-white"  routerLinkActive="bg-alt-light rounded-2" routerLink="login">دخول</a>
         </li>
       </ul>
     </div>

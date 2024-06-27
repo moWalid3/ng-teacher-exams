@@ -1,6 +1,6 @@
 
 <section class="pt-5" dir="rtl">
-  <form (ngSubmit)="submitForm(registerForm)" [formGroup]="registerForm" class="row g-4 p-3 pt-5 mx-auto w-75 border border-2 rounded-2">
+  <form (ngSubmit)="submitForm(registerForm)" [formGroup]="registerForm" class="row g-4 p-3 pt-5 mb-5 mx-auto w-75 border border-2 rounded-2">
     <h3 class="bg-alt text-white rounded-pill px-4 text-center m-0 py-2">إنشاء حساب</h3>
 
     <div class="col-md-6 mb-0 mb-md-2">
@@ -64,4 +64,6 @@
       <button [disabled]="registerForm.invalid" class="btn btn-alt" type="submit"> إنشاء الحساب</button>
     </div>
   </form>
+
+  <app-hint-auth></app-hint-auth>
 </section>
